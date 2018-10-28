@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Markdown Web Components</title>
+    <title>API</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
     <style>
         body {
@@ -18,8 +18,8 @@
             </a>
             <h1 class="item small header">MkDn Web Components</h1>
             <div class="right menu">
-                <a href="index.html" class="active item">Home</a>
-                <a href="api.html" class="item">API</a>
+                <a href="index.html" class="item">Home</a>
+                <a href="api.html" class="active item">API</a>
                 <a href="examples.html" class="item">Examples</a>
             </div>
 
@@ -28,24 +28,21 @@
 
     <div class="ui four column doubling stackable grid container">
         <div class="row">
-                <h1 class="ui large header sixteen wide column">MkDn</h1>
-            </div>
-            <div class="row">
-                <h2 class="ui medium header sixteen wide column">
-                    A library of web components for rendering markdown in any web page
-                </h2>
-            </div>
-        
+            <h1 class="two wide column">API</h1>
+        </div>
         <md-view class="row">
             <md-list class="four wide column"></md-list>
-            <md-story class="eleven wide column"></md-story>
-            <md-store src="md/home-index.json" stories="md/"></md-store>
+            <md-story class="eight wide column"></md-story>
+            <md-store src="md/api-index.json" stories="md/"></md-store>
         </md-view>
-
-    </article>
+    </div>
 
     <script type="text/javascript" src="lib/md-story.js"></script>
     <script type="text/javascript" src="lib/md-list.js"></script>
     <script type="text/javascript" src="lib/md-view.js"></script>
+
+</body>
+
+
 </body>
 </html>

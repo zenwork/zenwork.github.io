@@ -1,0 +1,23 @@
+{
+  "name": "zenwork.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenwork/zenwork.github.io.git"
+  },
+  "author": "Florian Hehlen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenwork/zenwork.github.io/issues"
+  },
+  "homepage": "https://github.com/zenwork/zenwork.github.io#readme"
+}
