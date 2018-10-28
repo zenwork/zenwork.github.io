@@ -11,7 +11,8 @@
         "md-store": "<md-store>",
         "md-static-store": "<md-static-store>",
         "md-view": "<md-view>",
-        "server-side-data": "Data Types"
+        "data-api": "Data Types",
+        "design": "Design"
     },
     "default": "api-home"
 }
