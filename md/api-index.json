@@ -6,5 +6,6 @@
     "md-store": "<md-store>",
     "md-static-store": "<md-static-store>",
     "md-view": "<md-view>",
-    "server-side-data":"Data Types"
+    "server-side-data":"Data Types",
+    "foo":"Alli's Foo"
 }
