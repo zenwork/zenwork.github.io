@@ -7,7 +7,7 @@ This is a collection of web components meant to work together.
 * [md-view](../docs/md-view.md) - provide state, event handling, and data-caching(eventually) to the other two components
 
 
-## Runinng the demos
+## Running the demos
 
 Each component has a set of demos that are used to demo the features AND run e2e tests against.
 
