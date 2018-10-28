@@ -1,10 +1,17 @@
 {
-    "api-home": "Overview",
-    "md-list": "<md-list>",
-    "md-crumbs": "<md-crumbs>",
-    "md-story": "<md-story>",
-    "md-store": "<md-store>",
-    "md-static-store": "<md-static-store>",
-    "md-view": "<md-view>",
-    "server-side-data":"Data Types"
+    "section": {
+        "title": "section",
+        "url": "md/section-index.json"
+    },
+    "stories": {
+        "api-home": "Overview",
+        "md-list": "<md-list>",
+        "md-crumbs": "<md-crumbs>",
+        "md-story": "<md-story>",
+        "md-store": "<md-store>",
+        "md-static-store": "<md-static-store>",
+        "md-view": "<md-view>",
+        "server-side-data": "Data Types"
+    },
+    "default": "api-home"
 }

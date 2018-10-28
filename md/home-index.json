@@ -1,3 +1,10 @@
 {
-    "home":"Overview"
+    "section": {
+        "title": "section",
+        "url": "md/section-index.json"
+    },
+    "stories": {
+        "home": "Overview"
+    },
+    "default":"home"
 }
