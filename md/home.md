@@ -1,7 +1,6 @@
-# mkdn-web-component
-## A library of web components for rendering markdown in any web page 
+# Overview
 
-MkDn is a collection of web components(v1) to show markdown content.
+#### `<MkDn/>` is a collection of web components(v1) to show markdown content.
 
 I started this as an exploration of the web components spec v1... and then I got a bit carried away.
 
