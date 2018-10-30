@@ -4,7 +4,10 @@
         "url": "md/section-index.json"
     },
     "stories": {
-        "home": "Overview"
+        "home": "Overview",
+        "api.html": {"redirect": "true", "title": "api"},
+        "api.html": {"redirect": "true", "title": "api"},
+        "examples.html": {"redirect": "true", "title": "examples"}
     },
-    "default":"home"
+    "default": "home"
 }

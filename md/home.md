@@ -1,12 +1,103 @@
-# Overview
+# mkdn-web-component
+## A library of web components for rendering markdown in any web page 
 
-This is the overview of the whole thing. This is a lot of text which will be replaced by some real content soon. I mostly want some long content here.
+MkDn is a collection of web components(v1) to show markdown content.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I started this as an exploration of the web components spec v1... and then I got a bit carried away.
 
-## Technology
+Some could say that there is no need for yet another markdown component or yet another blogging platform. And they would be right. That said, I am trying to make the resulting tool as simple, light, and easy to use as possible:
+* Enable end-users to own their own content delivery mechanism.
+* Use as little 3rd-party dependencies as possible.
+* Decouple your content from the presentation layer, frameworks, or any platform.
+ 
 
-* Web Components
-* Markdown
-* Lit Html (Polymer Project)
+## Priniciples
+
+* Provide a set of component that allows the easy integration of markdown content into ANY html ANYWHERE.
+* Only require the knowledge of markdown, JSON, and html to create complex documentation-based websites such as blogs, documentation, etc.
+* Provide SPA (single-page application) functionality without any programming
+* Lower level components like `md-story` and `md-list` can be used in standalone mode.
+* Backend integration is provided but is optional and flexible. The backend should be simple enough for simple manual setups... but it should be easy to create intelligent backends that can provide more complex meta-data when there is a lot of content to manage. 
+* The target use-cases are:
+    * A blog.
+    * Online documentation.
+    * Online fiction
+
+## 5 minute setup
+
+1. Create an empty directory with this structure
+1. Copy all of the mkdn libraries to `/lib`
+1. Create/copy markdown content to to `/md`
+1. Create an `index.json` file that lists the `.md` files to render
+1. Create an `index.html` file that contains your header, footer and an `md-view`
+1. run a server like `http-server` on the root of the project. For production you will likely need something designed for production express or nginx.
+
+### Resulting `index.hmtl`
+
+```
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <div class="container">
+        <md-view class="row">
+            <md-story></md-story>
+            <md-list></md-list>
+            <md-store src="/md/index.json" stories="/md/"></md-store>
+        </md-view>
+    </div>
+    <script src="/api/md-story.js"></script>
+    <script src="/api/md-list.js"></script>
+    <script src="/api/md-view.js"></script>
+</body>
+</html>
+```
+
+### Resulting file structure
+
+```
+   web-site
+    |- index.html
+    |
+    |- lib
+    |   |- md-view.js
+    |   |- md-story.js
+    |   |- md-list.js
+    |   |- md-crumbs.js
+    |
+    |- md
+    |   |- index.json
+    |   |- md-file-1.md
+    |   |- md-file-2.md
+```
+
+
+
+## Project Status
+
+I am implenting this in my free time. A lot is done. But a lot remains to be done too.
+
+* Basic implementation works
+* TODO:
+  * md-story
+      * add support for dropcaps at document start 
+      * expose some kind of styling interface
+  * md-list
+      * implement support for groups
+  * md-view
+      * implement support for a rest-based back-end(md-store)
+  * md-store and md-static-store
+      * document the data formats and back-end api specification
+      * add caching support
+  * general
+      * e2e tests do not work in firefox
+      * sort out minification and uglification
+      * create online version of demo
+      * build and publish
+      * move /demo out /test one level up
+      * review decision to have json and markdown transclusion... seems weird practice
+      * figure out what the magic that webpack is doing!
+      * events.js should probably be split into smaller files
 

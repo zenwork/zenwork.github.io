@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="webcomponents-loader" level="application" />
+    <orderEntry type="library" name="fse" level="project" />
   </component>
 </module>
