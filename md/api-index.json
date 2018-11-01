@@ -5,12 +5,12 @@
     },
     "stories": {
         "api-home": "Overview",
-        "md-list": "<md-list>",
-        "md-crumbs": "<md-crumbs>",
-        "md-story": "<md-story>",
-        "md-store": "<md-store>",
-        "md-static-store": "<md-static-store>",
-        "md-view": "<md-view>",
+        "mkdn-list": "<mkdn-list>",
+        "mkdn-nav": "<mkdn-nav>",
+        "mkdn-story": "<mkdn-story>",
+        "mkdn-store": "<mkdn-store>",
+        "mkdn-static-store": "<mkdn-static-store>",
+        "mkdn-view": "<mkdn-view>",
         "data-api": "Data Types",
         "design": "Design"
     },

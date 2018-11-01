@@ -1,4 +1,4 @@
-# MD-LIST Web Component
+# mkdn-list Web Component
 
 This is a web component that renders a list of selectable stories.
 
@@ -10,13 +10,13 @@ This is a web component that renders a list of selectable stories.
             <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.0.2/webcomponents-bundle.js"></script>
         </head>
         <body>
-            <md-list>
+            <mkdn-list>
                 {
                 "title-1": "Title 1",
                 "title-2": "Title 2"
                 }
-            </md-list>
-            <script src="md-story.js"></script>
+            </mkdn-list>
+            <script src="mkdn-story.js"></script>
         </body>
     </html>
 ```

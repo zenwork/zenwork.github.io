@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>mdnavigation/base</title>
+<script src="../../webcomponents-bundle.js"></script>
+
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding-top: 10px;
+    }
+
+    .demo {
+        border: darkslategray dotted 1px;
+    }
+
+    .demo-code {
+        background: lightgray;
+        border: darkslategrey solid 1;
+        border-radius: 10px;
+        font-family: sans-serif
+    }
+
+    .demo-code-title {
+        padding-left: 5px;
+    }
+
+    .demo, .demo-code {
+        margin: 10px;
+        padding: 5px;
+    }
+
+</style>
+
+    <h1>Navigation</h1>
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Empty</h2>
+
+    
+    <div id="empty" class="demo">
+        <md-crumbs></md-crumbs>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.9568111506301697">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('empty', '0.9568111506301697');
+
+    </script>
+</div>
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Standalone</h2>
+
+    
+    <div id="standalone" class="demo">
+        <md-crumbs>
+            [
+                {"id": "home", "name": "home", "link": "http://localhost:8080/demo/"},
+                {"id": "section-1", "name": "section 1", "link": "http://localhost:8080/demo/mdnavigation/"},
+                {"id": "my-page", "name": "my page", "link": "#my-page"}
+            ]
+        </md-crumbs>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.2778821068074997">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('standalone', '0.2778821068074997');
+
+    </script>
+</div>
+
+
+
+<script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+</html>

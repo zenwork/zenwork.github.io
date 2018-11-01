@@ -1,3 +1,3 @@
 # MD-STORE
 
-stoer implementation that connect to the backend
+store implementation that connect to the backend

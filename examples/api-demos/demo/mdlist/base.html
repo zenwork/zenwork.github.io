@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>mdlist/base</title>
+<script src="../../webcomponents-bundle.js"></script>
+
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding-top: 10px;
+    }
+
+    .demo {
+        border: darkslategray dotted 1px;
+    }
+
+    .demo-code {
+        background: lightgray;
+        border: darkslategrey solid 1;
+        border-radius: 10px;
+        font-family: sans-serif
+    }
+
+    .demo-code-title {
+        padding-left: 5px;
+    }
+
+    .demo, .demo-code {
+        margin: 10px;
+        padding: 5px;
+    }
+
+</style>
+
+    <h1>md-list Demo</h1>
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Empty</h2>
+
+    
+    <div id="empty" class="demo">
+        <md-list></md-list>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.15696368259690496">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('empty', '0.15696368259690496');
+
+    </script>
+</div>
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Simple List</h2>
+
+    
+    <div id="simple-list" class="demo">
+        <md-list>
+            {
+                "section": {
+                    "title": "main",
+                    "url": "md/main=index.json"
+                },
+                "stories": {
+                    "title-1": "Title 1",
+                    "title-2": "Title 2"
+                }
+            }
+        </md-list>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.9874693046390579">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('simple-list', '0.9874693046390579');
+
+    </script>
+</div>
+
+
+    <p><strong>Note:</strong> open the console to see events being logged</p>
+    <script>
+		/**
+		 * Event listener for list selection events
+		 */
+		document
+			.querySelectorAll('md-list')
+			.forEach((el) => el.addEventListener('md-list-selection',
+			                                     function (e) {
+				                                     console.log(`event dispatched: ${JSON.stringify(e.detail)}`);
+			                                     }
+			));
+
+    </script>
+
+<script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>childparent/base</title>
+<script src="../../webcomponents-bundle.js"></script>
+
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding-top: 10px;
+    }
+
+    .demo {
+        border: darkslategray dotted 1px;
+    }
+
+    .demo-code {
+        background: lightgray;
+        border: darkslategrey solid 1;
+        border-radius: 10px;
+        font-family: sans-serif
+    }
+
+    .demo-code-title {
+        padding-left: 5px;
+    }
+
+    .demo, .demo-code {
+        margin: 10px;
+        padding: 5px;
+    }
+
+</style>
+
+    <h1>parent/child Demo</h1>
+    <h2>This is only for testing the child-parent init process</h2>
+    <h3>enable verbose logging to see life-cycle logging</h3>
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Cooperative</h2>
+
+    
+    <div id="with-parent" class="demo">
+        <md-parent id="main">
+            <md-child id="c1"></md-child>
+            <md-child id="c2"></md-child>
+            <md-child id="c3"></md-child>
+        </md-parent>
+        <md-child-two></md-child-two>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.9984924149280194">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('with-parent', '0.9984924149280194');
+
+    </script>
+</div>
+
+
+
+<script type="text/javascript" src="../../md-parentchild.js"></script><script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+</html>

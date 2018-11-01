@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>mkdnview/base</title>
+<script src="../../webcomponents-bundle.js"></script>
+
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding-top: 10px;
+    }
+
+    .demo {
+        border: darkslategray dotted 1px;
+    }
+
+    .demo-code {
+        background: lightgray;
+        border: darkslategrey solid 1;
+        border-radius: 10px;
+        font-family: sans-serif
+    }
+
+    .demo-code-title {
+        padding-left: 5px;
+    }
+
+    .demo, .demo-code {
+        margin: 10px;
+        padding: 5px;
+    }
+
+</style>
+
+    <h1>mkdn-view Demo</h1>
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Empty</h2>
+
+    
+    <div id="empty" class="demo">
+        <mkdn-view>
+            <mkdn-list></mkdn-list>
+            <mkdn-story></mkdn-story>
+        </mkdn-view>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.5465850021510015">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('empty', '0.5465850021510015');
+
+    </script>
+</div>
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title">Static Backend</h2>
+
+    
+    <div id="static" class="demo">
+        <mkdn-view>
+            <mkdn-list></mkdn-list>
+            <mkdn-story></mkdn-story>
+            <mkdn-static-store>
+                {
+                    "section": {
+                        "title": "November",
+                        "url": "md/2018/index.json",
+                        "member-of": {
+                            "title": "2018",
+                            "url": "md/2018/index.json"
+                        }
+                    },
+                    "stories": {
+                        "my-first-Blog": {
+                            "title": "My First Blog",
+                            "content": "# Title 1\n\nFirst Blog content."
+                        },
+                        "my-second-blog": {
+                            "title": "My Second Blog: Introduction to MkDn",
+                            "hash": "my-second-blog",
+                            "short-title": "My 2nd Blog",
+                            "content": "# Title 2\n\nThe content"
+                        },
+                        "https://google.com": {"redirect": "true", "title": "google"}
+                    },
+                    "default": "my-first-Blog"
+                }
+            </mkdn-static-store>
+        </mkdn-view>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.10029232059516513">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('static', '0.10029232059516513');
+
+    </script>
+</div>
+
+    <p><strong>Note:</strong> open the console to see events being logged</p>
+    <script>
+		/**
+		 * Event listener for list selection events
+		 */
+		document
+			.querySelectorAll('#static > mkdn-view > mkdn-list')
+			.forEach((el) => el.addEventListener('mkdn-list-selected',
+			                                     function (e) {
+				                                     console.log(`selected event dispatched: ${JSON.stringify(e.detail)}`);
+			                                     }
+			));
+
+		document
+			.querySelectorAll('#static > mkdn-view > mkdn-static-store')
+			.forEach((el) => el.addEventListener('mkdn-store-updated',
+			                                     function () {
+				                                     console.log(`store updated event dispatched`);
+			                                     }
+			));
+
+    </script>
+<script type="text/javascript" src="../../md-parentchild.js"></script><script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+</html>

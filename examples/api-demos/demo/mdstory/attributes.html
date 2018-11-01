@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>mdstory/attributes</title>
+<script src="../../webcomponents-bundle.js"></script>
+
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding-top: 10px;
+    }
+
+    .demo {
+        border: darkslategray dotted 1px;
+    }
+
+    .demo-code {
+        background: lightgray;
+        border: darkslategrey solid 1;
+        border-radius: 10px;
+        font-family: sans-serif
+    }
+
+    .demo-code-title {
+        padding-left: 5px;
+    }
+
+    .demo, .demo-code {
+        margin: 10px;
+        padding: 5px;
+    }
+
+</style>
+
+    <h1>Attributes</h1>
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title"><code>hidden</code> attribute</h2>
+
+    
+    <div id="hidden" class="demo">
+        <md-story id="hidden" hidden="false">some markdown</md-story>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.7965176241248395">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('hidden', '0.7965176241248395');
+
+    </script>
+</div>
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title"><code>style</code> attribute</h2>
+
+    
+    <div id="style" class="demo">
+        <md-story style="background:salmon;font-family: monospace">
+            # SALMON MARKDOWN
+
+            The _salmon_ jumped over the moon
+        </md-story>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.1302844416903055">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('style', '0.1302844416903055');
+
+    </script>
+</div>
+
+
+<script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+</html>
