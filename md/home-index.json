@@ -1,11 +1,10 @@
 {
     "section": {
-        "title": "section",
-        "url": "md/section-index.json"
+        "title": "<mkdn>",
+        "url": "index.html"
     },
     "stories": {
         "home": "Overview",
-        "api.html": {"redirect": "true", "title": "api"},
         "api.html": {"redirect": "true", "title": "api"},
         "examples.html": {"redirect": "true", "title": "examples"}
     },

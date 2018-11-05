@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/zenwork/zenwork.github.io#readme",
   "dependencies": {
+    "browser-sync": "^2.26.3",
     "fs-extra": "^7.0.0"
   }
 }

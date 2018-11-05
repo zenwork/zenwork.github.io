@@ -80,19 +80,21 @@
 
     <div class="ui four column doubling stackable grid container">
         <div class="row">
-            <h1 class="ui large header sixteen wide column">API</h1>
+            <mkdn-nav view="main" class="ui large header sixteen wide column"></mkdn-nav>
         </div>
-        <mkdn-view class="row">
+        <mkdn-view id="main" class="row">
             <mkdn-list class="four wide column"></mkdn-list>
-            <mkdn-story class="eleven wide column"></mkdn-story>
+            <mkdn-story class="eleven wide column" stylesheet="media/highlight.css"></mkdn-story>
             <mkdn-store src="md/api-index.json" stories="md/"></mkdn-store>
         </mkdn-view>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <script type="text/javascript" src="lib/polyfill.js"></script>
     <script type="text/javascript" src="lib/mkdn-story.js"></script>
     <script type="text/javascript" src="lib/mkdn-list.js"></script>
     <script type="text/javascript" src="lib/mkdn-view.js"></script>
+    <script type="text/javascript" src="lib/mkdn-nav.js"></script>
 
 </body>
 

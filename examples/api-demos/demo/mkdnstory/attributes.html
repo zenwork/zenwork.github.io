@@ -53,7 +53,7 @@
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.10337694349450688">
+        <code id="0.32033379305808607">
 
         </code>
     </pre>
@@ -62,7 +62,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('hidden', '0.10337694349450688');
+		})('hidden', '0.32033379305808607');
 
     </script>
 </div>
@@ -74,16 +74,21 @@
     
     <div id="style" class="demo">
         <mkdn-story style="background:salmon;font-family: monospace">
-            # SALMON MARKDOWN
+# SALMON MARKDOWN
 
-            The _salmon_ jumped over the moon
+The _salmon_ jumped over the moon
+```javascript
+function foo(){
+    return 'hello bar';
+}
+```
         </mkdn-story>
     </div>
     
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.07328104873599095">
+        <code id="0.9214111802718883">
 
         </code>
     </pre>
@@ -92,11 +97,52 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('style', '0.07328104873599095');
+		})('style', '0.9214111802718883');
 
     </script>
 </div>
 
 
-<script type="text/javascript" src="../../md-parentchild.js"></script><script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
+    <!-- --------------------------------------------------------------------- -->
+    <h2 class="demo-code-title"><code>stylesheet</code> attribute</h2>
+
+    
+    <div id="config" class="demo">
+        <mkdn-story stylesheet="highlight.css">
+```javascript
+function foo(){
+    return 'hello bar';
+}
+console.log(foo());
+```
+
+```java
+public class Bar{
+  private String foo = 'hello bar';
+}
+```
+
+Doing the __markdown__ thang!
+        </mkdn-story>
+    </div>
+    
+<h3 class="demo-code-title">code template</h3>
+<div class="demo-code">
+    <pre>
+        <code id="0.9473402391226575">
+
+        </code>
+    </pre>
+    <script>
+		(function (codeId, demoId) {
+			let code = document.getElementById(codeId).innerHTML;
+			document.getElementById(demoId).innerText = '\n    ' + code;
+
+		})('config', '0.9473402391226575');
+
+    </script>
+</div>
+
+
+<script type="text/javascript" src="../../polyfill.js"></script><script type="text/javascript" src="../../md-parentchild.js"></script><script type="text/javascript" src="../../mkdn-bundle.js"></script></body>
 </html>
