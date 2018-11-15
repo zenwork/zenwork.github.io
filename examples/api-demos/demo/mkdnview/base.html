@@ -56,7 +56,7 @@
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.8859219118005413">
+        <code id="0.19962240896386518">
 
         </code>
     </pre>
@@ -65,7 +65,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('empty', '0.8859219118005413');
+		})('empty', '0.19962240896386518');
 
     </script>
 </div>
@@ -81,14 +81,9 @@
             <mkdn-story></mkdn-story>
             <mkdn-static-store>
                 {
-                    "section": {
-                        "title": "November",
-                        "url": "md/2018/index.json",
-                        "member-of": {
-                            "title": "2018",
-                            "url": "md/2018/index.json"
-                        }
-                    },
+                    "sections":[
+                        {"title": "November", "url": "md/2018/index.json"}
+                    ],
                     "stories": {
                         "my-first-Blog": {
                             "title": "My First Blog",
@@ -102,7 +97,7 @@
                         },
                         "https://google.com": {"redirect": "true", "title": "google"}
                     },
-                    "default": "my-first-Blog"
+                    "defaultStory": "my-first-Blog"
                 }
             </mkdn-static-store>
         </mkdn-view>
@@ -111,7 +106,7 @@
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.9768898867256115">
+        <code id="0.6457325264262979">
 
         </code>
     </pre>
@@ -120,7 +115,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('static', '0.9768898867256115');
+		})('static', '0.6457325264262979');
 
     </script>
 </div>

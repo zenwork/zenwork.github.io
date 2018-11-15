@@ -53,7 +53,7 @@
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.4793375671448461">
+        <code id="0.03195441103132923">
 
         </code>
     </pre>
@@ -62,7 +62,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('empty', '0.4793375671448461');
+		})('empty', '0.03195441103132923');
 
     </script>
 </div>
@@ -74,14 +74,15 @@
     <div id="simple-list" class="demo">
         <mkdn-list>
             {
-                "section": {
+                "sections":[ {
                     "title": "main",
                     "url": "md/main=index.json"
-                },
+                }],
                 "stories": {
                     "title-1": "Title 1",
                     "title-2": "Title 2"
-                }
+                },
+                "default":"title-1"
             }
         </mkdn-list>
     </div>
@@ -89,7 +90,7 @@
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.19002935379463803">
+        <code id="0.6669677415860704">
 
         </code>
     </pre>
@@ -98,7 +99,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('simple-list', '0.19002935379463803');
+		})('simple-list', '0.6669677415860704');
 
     </script>
 </div>

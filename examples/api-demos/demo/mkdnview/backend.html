@@ -45,21 +45,21 @@
     <!-- --------------------------------------------------------------------- -->
     <h2 class="demo-code-title">Live Backend</h2>
 
-    
+
     <div id="live" class="demo">
         <mkdn-nav view="main"></mkdn-nav>
         <mkdn-view id="main">
             <mkdn-list></mkdn-list>
             <mkdn-story></mkdn-story>
-            <mkdn-store src="http://localhost:8080/demo/mkdnview/index.json"
-                        stories="http://localhost:8080/demo/mkdnview/"></mkdn-store>
+            <mkdn-store src="/examples/api-demos/demo/mkdnview/index.json"
+                        stories="/examples/api-demos/demo/mkdnview/"></mkdn-store>
         </mkdn-view>
     </div>
-    
+
 <h3 class="demo-code-title">code template</h3>
 <div class="demo-code">
     <pre>
-        <code id="0.40905931257592276">
+        <code id="0.7185917332101035">
 
         </code>
     </pre>
@@ -68,7 +68,7 @@
 			let code = document.getElementById(codeId).innerHTML;
 			document.getElementById(demoId).innerText = '\n    ' + code;
 
-		})('live', '0.40905931257592276');
+		})('live', '0.7185917332101035');
 
     </script>
 </div>

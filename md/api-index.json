@@ -1,8 +1,8 @@
 {
-    "section": {
+    "sections": [{
         "title": "API",
         "url": "api.html"
-    },
+    }],
     "stories": {
         "api-home": "Overview",
         "mkdn-list": "<mkdn-list>",
@@ -12,8 +12,7 @@
         "mkdn-static-store": "<mkdn-static-store>",
         "mkdn-view": "<mkdn-view>",
         "data-api": "Data Types",
-        "design": "Design",
-        "http://localhost:3000/examples/api-demos/demo/":{"redirect":"true","title":"api demos"}
+        "design": "Design"
     },
-    "default": "api-home"
+    "defaultStory": "api-home"
 }

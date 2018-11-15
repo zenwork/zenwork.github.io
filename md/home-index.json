@@ -1,12 +1,12 @@
 {
-    "section": {
+    "sections": [{
         "title": "<mkdn>",
         "url": "index.html"
-    },
+    }],
     "stories": {
         "home": "Overview",
         "api.html": {"redirect": "true", "title": "api"},
         "examples.html": {"redirect": "true", "title": "examples"}
     },
-    "default": "home"
+    "defaultStory": "home"
 }
