@@ -1,7 +1,7 @@
 {
     "sections": [{
-        "title": "<mkdn>",
-        "url": "index.html"
+        "title": "home",
+        "url": "/"
     }],
     "stories": {
         "home": "Overview",

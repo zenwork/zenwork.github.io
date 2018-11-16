@@ -64,6 +64,21 @@
             margin: 5em 0em 0em;
             padding: 5em 0em;
         }
+         .row,
+        .mkdn-list {
+            padding: 0;
+        }
+
+         mkdn-nav > .mkdn-nav {
+             font-size: 0.5rem;
+         }
+        .mkdn-list li + li:before {
+            padding: 8px;
+        }
+
+        .grid {
+            padding: 0;
+        }
 
     </style>
 </head>
@@ -78,15 +93,15 @@
                 <a href="api.html" class="item">Api</a>
                 <a href="examples.html" class="item">Examples</a>
             </div>
-        
+
     </div>
 
     <div class="ui four column doubling stackable grid container">
         <div class="row">
-            <mkdn-nav view="main" class="ui large header sixteen wide column"></mkdn-nav>
+            <mkdn-nav view="main" class="ui header sixteen wide column" delimiter="&nbsp;&#8259;&nbsp;"></mkdn-nav>
         </div>
         <mkdn-view id="main" class="row">
-            <mkdn-list class="four wide column computer only"></mkdn-list>
+            <mkdn-list class="four wide column computer only" ></mkdn-list>
             <mkdn-story class="eleven wide column" stylesheet="media/highlight.css"></mkdn-story>
             <mkdn-store src="md/home-index.json" stories="md/"></mkdn-store>
         </mkdn-view>

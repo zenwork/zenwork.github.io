@@ -1,5 +1,8 @@
 {
     "sections": [{
+        "title": "home",
+        "url": "/"
+    },{
         "title": "API",
         "url": "api.html"
     }],

@@ -14,7 +14,7 @@ Each component has a set of demos that are used to demo the features AND run e2e
 
 make sure `http-server` is installed globally
 
-```
+```shell
 npm install
 npm run build //or build:watch
 http-serve dist
