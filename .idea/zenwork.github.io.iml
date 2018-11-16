@@ -10,5 +10,6 @@
     <orderEntry type="library" name="webcomponents-loader" level="application" />
     <orderEntry type="library" name="fse" level="project" />
     <orderEntry type="library" name="webcomponents-loader" level="application" />
+    <orderEntry type="library" name="webcomponents-bundle" level="application" />
   </component>
 </module>
